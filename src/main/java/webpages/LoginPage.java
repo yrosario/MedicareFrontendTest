@@ -13,6 +13,11 @@ public class LoginPage {
 	By loginBtn=By.id("login-btn");
 	
 	
+	//Title page
+	By title=By.id("login-title");
+	By invalidMsg=By.id("login-warning");
+	
+	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 	}
@@ -28,6 +33,14 @@ public class LoginPage {
 	
 	public WebElement getLoginBtn() {
 		return driver.findElement(loginBtn);
+	}
+	
+	public WebElement getTitle() {
+		return driver.findElement(title);
+	}
+	
+	public WebElement getLoginWarning() {
+		return driver.findElement(invalidMsg);
 	}
 	
 	
