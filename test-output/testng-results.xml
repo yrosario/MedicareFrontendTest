@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-09T23:45:40 EDT" name="Default suite" finished-at="2022-08-09T23:45:51 EDT" duration-ms="11027">
+  <suite started-at="2022-08-11T00:40:56 EDT" name="Default suite" finished-at="2022-08-11T00:40:58 EDT" duration-ms="1787">
     <groups>
     </groups>
-    <test started-at="2022-08-09T23:45:40 EDT" name="Default test" finished-at="2022-08-09T23:45:51 EDT" duration-ms="11027">
-      <class name="login.RegistrationTest">
-        <test-method signature="ExistingUserTest()[pri:0, instance:login.RegistrationTest@b18c4]" started-at="2022-08-09T23:45:40 EDT" name="ExistingUserTest" finished-at="2022-08-09T23:45:41 EDT" duration-ms="1219" status="PASS">
+    <test started-at="2022-08-11T00:40:56 EDT" name="Default test" finished-at="2022-08-11T00:40:58 EDT" duration-ms="1787">
+      <class name="admin.AdminEditProductTest">
+        <test-method signature="testProductId()[pri:0, instance:admin.AdminEditProductTest@6345e7b9]" started-at="2022-08-11T00:40:56 EDT" name="testProductId" finished-at="2022-08-11T00:40:57 EDT" duration-ms="525" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ExistingUserTest -->
-        <test-method signature="InvalidPasswodTest()[pri:0, instance:login.RegistrationTest@b18c4]" started-at="2022-08-09T23:45:41 EDT" name="InvalidPasswodTest" finished-at="2022-08-09T23:45:42 EDT" duration-ms="1064" status="PASS">
+        </test-method> <!-- testProductId -->
+        <test-method signature="validateFormTest()[pri:0, instance:admin.AdminEditProductTest@6345e7b9]" started-at="2022-08-11T00:40:57 EDT" name="validateFormTest" finished-at="2022-08-11T00:40:58 EDT" duration-ms="647" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InvalidPasswodTest -->
-        <test-method signature="ValidRegistrationTest()[pri:0, instance:login.RegistrationTest@b18c4]" started-at="2022-08-09T23:45:42 EDT" name="ValidRegistrationTest" finished-at="2022-08-09T23:45:49 EDT" duration-ms="6229" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidRegistrationTest -->
-        <test-method signature="disableBtnTest()[pri:0, instance:login.RegistrationTest@b18c4]" started-at="2022-08-09T23:45:49 EDT" name="disableBtnTest" finished-at="2022-08-09T23:45:50 EDT" duration-ms="1048" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- disableBtnTest -->
-        <test-method signature="invalidEmailTest()[pri:0, instance:login.RegistrationTest@b18c4]" started-at="2022-08-09T23:45:50 EDT" name="invalidEmailTest" finished-at="2022-08-09T23:45:51 EDT" duration-ms="1143" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidEmailTest -->
-        <test-method signature="validatePageTitleTest()[pri:0, instance:login.RegistrationTest@b18c4]" started-at="2022-08-09T23:45:51 EDT" name="validatePageTitleTest" finished-at="2022-08-09T23:45:51 EDT" duration-ms="181" status="PASS">
+        </test-method> <!-- validateFormTest -->
+        <test-method signature="validatePageTitleTest()[pri:0, instance:admin.AdminEditProductTest@6345e7b9]" started-at="2022-08-11T00:40:58 EDT" name="validatePageTitleTest" finished-at="2022-08-11T00:40:58 EDT" duration-ms="162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePageTitleTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:login.RegistrationTest@b18c4]" started-at="2022-08-09T23:45:51 EDT" name="close" finished-at="2022-08-09T23:45:51 EDT" duration-ms="85" status="PASS">
+        <test-method signature="validateSuccessMessageTest()[pri:0, instance:admin.AdminEditProductTest@6345e7b9]" started-at="2022-08-11T00:40:58 EDT" name="validateSuccessMessageTest" finished-at="2022-08-11T00:40:58 EDT" duration-ms="324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSuccessMessageTest -->
+        <test-method is-config="true" signature="close()[pri:0, instance:admin.AdminEditProductTest@6345e7b9]" started-at="2022-08-11T00:40:58 EDT" name="close" finished-at="2022-08-11T00:40:58 EDT" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- login.RegistrationTest -->
+      </class> <!-- admin.AdminEditProductTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
