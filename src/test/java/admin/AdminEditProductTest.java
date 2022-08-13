@@ -39,16 +39,16 @@ public class AdminEditProductTest extends Base {
 		
 	}
 
-	@Test
-	public void validatePageTitleTest() {
-		 webDriver.get(baseURL + "/admin/manage-products/edit-product/1");
-		
-		
-		EditProductPage editProductPage = new EditProductPage(webDriver);
-		
-		String result = editProductPage.getTitle().getText();
-		AssertJUnit.assertEquals(result,"Edit Product");
-	}
+//	@Test
+//	public void validatePageTitleTest() {
+//		 webDriver.get(baseURL + "/admin/manage-products/edit-product/1");
+//		
+//		
+//		EditProductPage editProductPage = new EditProductPage(webDriver);
+//		
+//		String result = editProductPage.getTitle().getText();
+//		AssertJUnit.assertEquals(result,"Edit Product");
+//	}
 	
 	@Test
 	public void testProductId() {
