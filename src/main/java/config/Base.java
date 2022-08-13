@@ -34,6 +34,7 @@ public class Base {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("headless");
 		options.addArguments("disable-gpu");
+		options.addArguments("--disable-dev-shm-usage");
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", folderPath + "//chromedriver");
