@@ -1,137 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="25" passed="25" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-13T04:19:09 EDT" name="Default suite" finished-at="2022-08-13T04:19:30 EDT" duration-ms="21419">
+  <suite started-at="2022-08-13T05:06:18 EDT" name="Default suite" finished-at="2022-08-13T05:06:20 EDT" duration-ms="1842">
     <groups>
     </groups>
-    <test started-at="2022-08-13T04:19:09 EDT" name="Default test" finished-at="2022-08-13T04:19:30 EDT" duration-ms="21419">
-      <class name="admin.AdminTest">
-        <test-method signature="EditBtnTest()[pri:0, instance:admin.AdminTest@2a9bc08f]" started-at="2022-08-13T04:19:09 EDT" name="EditBtnTest" finished-at="2022-08-13T04:19:10 EDT" duration-ms="846" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EditBtnTest -->
-        <test-method signature="validateHeadersTest()[pri:0, instance:admin.AdminTest@2a9bc08f]" started-at="2022-08-13T04:19:10 EDT" name="validateHeadersTest" finished-at="2022-08-13T04:19:10 EDT" duration-ms="166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateHeadersTest -->
-        <test-method signature="validatePageTitleTest()[pri:0, instance:admin.AdminTest@2a9bc08f]" started-at="2022-08-13T04:19:10 EDT" name="validatePageTitleTest" finished-at="2022-08-13T04:19:10 EDT" duration-ms="273" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatePageTitleTest -->
-        <test-method signature="validatePriceTest()[pri:0, instance:admin.AdminTest@2a9bc08f]" started-at="2022-08-13T04:19:10 EDT" name="validatePriceTest" finished-at="2022-08-13T04:19:11 EDT" duration-ms="356" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatePriceTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:admin.AdminTest@2a9bc08f]" started-at="2022-08-13T04:19:30 EDT" name="close" finished-at="2022-08-13T04:19:30 EDT" duration-ms="65" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- admin.AdminTest -->
-      <class name="shop.ShopTest">
-        <test-method signature="buttonNotLoginTest()[pri:0, instance:shop.ShopTest@479f2dc2]" started-at="2022-08-13T04:19:11 EDT" name="buttonNotLoginTest" finished-at="2022-08-13T04:19:11 EDT" duration-ms="619" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- buttonNotLoginTest -->
-        <test-method signature="buttonTest()[pri:0, instance:shop.ShopTest@479f2dc2]" started-at="2022-08-13T04:19:11 EDT" name="buttonTest" finished-at="2022-08-13T04:19:12 EDT" duration-ms="803" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- buttonTest -->
-        <test-method signature="categoryTest()[pri:0, instance:shop.ShopTest@479f2dc2]" started-at="2022-08-13T04:19:12 EDT" name="categoryTest" finished-at="2022-08-13T04:19:14 EDT" duration-ms="1888" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- categoryTest -->
-        <test-method signature="prodBuyBtnNotLoginTest()[pri:0, instance:shop.ShopTest@479f2dc2]" started-at="2022-08-13T04:19:14 EDT" name="prodBuyBtnNotLoginTest" finished-at="2022-08-13T04:19:15 EDT" duration-ms="478" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- prodBuyBtnNotLoginTest -->
-        <test-method signature="productListTest()[pri:0, instance:shop.ShopTest@479f2dc2]" started-at="2022-08-13T04:19:15 EDT" name="productListTest" finished-at="2022-08-13T04:19:15 EDT" duration-ms="213" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productListTest -->
-        <test-method signature="searchTest()[pri:0, instance:shop.ShopTest@479f2dc2]" started-at="2022-08-13T04:19:15 EDT" name="searchTest" finished-at="2022-08-13T04:19:16 EDT" duration-ms="917" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method signature="validatePageTitleTest()[pri:0, instance:shop.ShopTest@479f2dc2]" started-at="2022-08-13T04:19:16 EDT" name="validatePageTitleTest" finished-at="2022-08-13T04:19:16 EDT" duration-ms="186" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatePageTitleTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:shop.ShopTest@479f2dc2]" started-at="2022-08-13T04:19:30 EDT" name="close" finished-at="2022-08-13T04:19:30 EDT" duration-ms="69" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- shop.ShopTest -->
-      <class name="login.LoginTest">
-        <test-method signature="badLoginTest()[pri:0, instance:login.LoginTest@5580d62f]" started-at="2022-08-13T04:19:16 EDT" name="badLoginTest" finished-at="2022-08-13T04:19:17 EDT" duration-ms="833" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- badLoginTest -->
-        <test-method signature="testEmptyPassword()[pri:0, instance:login.LoginTest@5580d62f]" started-at="2022-08-13T04:19:17 EDT" name="testEmptyPassword" finished-at="2022-08-13T04:19:17 EDT" duration-ms="317" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEmptyPassword -->
-        <test-method signature="testEmptyUsername()[pri:0, instance:login.LoginTest@5580d62f]" started-at="2022-08-13T04:19:17 EDT" name="testEmptyUsername" finished-at="2022-08-13T04:19:17 EDT" duration-ms="345" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEmptyUsername -->
-        <test-method signature="validatePageTitleTest()[pri:0, instance:login.LoginTest@5580d62f]" started-at="2022-08-13T04:19:17 EDT" name="validatePageTitleTest" finished-at="2022-08-13T04:19:18 EDT" duration-ms="262" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatePageTitleTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:login.LoginTest@5580d62f]" started-at="2022-08-13T04:19:30 EDT" name="close" finished-at="2022-08-13T04:19:30 EDT" duration-ms="65" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- login.LoginTest -->
-      <class name="login.RegistrationTest">
-        <test-method signature="ExistingUserTest()[pri:0, instance:login.RegistrationTest@2a2ef072]" started-at="2022-08-13T04:19:18 EDT" name="ExistingUserTest" finished-at="2022-08-13T04:19:19 EDT" duration-ms="1661" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExistingUserTest -->
-        <test-method signature="InvalidPasswodTest()[pri:0, instance:login.RegistrationTest@2a2ef072]" started-at="2022-08-13T04:19:19 EDT" name="InvalidPasswodTest" finished-at="2022-08-13T04:19:20 EDT" duration-ms="895" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InvalidPasswodTest -->
-        <test-method signature="ValidRegistrationTest()[pri:0, instance:login.RegistrationTest@2a2ef072]" started-at="2022-08-13T04:19:20 EDT" name="ValidRegistrationTest" finished-at="2022-08-13T04:19:26 EDT" duration-ms="5954" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidRegistrationTest -->
-        <test-method signature="disableBtnTest()[pri:0, instance:login.RegistrationTest@2a2ef072]" started-at="2022-08-13T04:19:26 EDT" name="disableBtnTest" finished-at="2022-08-13T04:19:27 EDT" duration-ms="667" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- disableBtnTest -->
-        <test-method signature="invalidEmailTest()[pri:0, instance:login.RegistrationTest@2a2ef072]" started-at="2022-08-13T04:19:27 EDT" name="invalidEmailTest" finished-at="2022-08-13T04:19:28 EDT" duration-ms="771" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidEmailTest -->
-        <test-method signature="validatePageTitleTest()[pri:0, instance:login.RegistrationTest@2a2ef072]" started-at="2022-08-13T04:19:28 EDT" name="validatePageTitleTest" finished-at="2022-08-13T04:19:28 EDT" duration-ms="213" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatePageTitleTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:login.RegistrationTest@2a2ef072]" started-at="2022-08-13T04:19:30 EDT" name="close" finished-at="2022-08-13T04:19:30 EDT" duration-ms="67" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- login.RegistrationTest -->
+    <test started-at="2022-08-13T05:06:18 EDT" name="Default test" finished-at="2022-08-13T05:06:20 EDT" duration-ms="1842">
       <class name="admin.AdminEditProductTest">
-        <test-method signature="testProductId()[pri:0, instance:admin.AdminEditProductTest@715b886f]" started-at="2022-08-13T04:19:28 EDT" name="testProductId" finished-at="2022-08-13T04:19:29 EDT" duration-ms="1091" status="PASS">
+        <test-method signature="testProductId()[pri:0, instance:admin.AdminEditProductTest@4f8b4bd0]" started-at="2022-08-13T05:06:18 EDT" name="testProductId" finished-at="2022-08-13T05:06:18 EDT" duration-ms="525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProductId -->
-        <test-method signature="validateFormTest()[pri:0, instance:admin.AdminEditProductTest@715b886f]" started-at="2022-08-13T04:19:29 EDT" name="validateFormTest" finished-at="2022-08-13T04:19:29 EDT" duration-ms="508" status="PASS">
+        <test-method signature="validateFormTest()[pri:0, instance:admin.AdminEditProductTest@4f8b4bd0]" started-at="2022-08-13T05:06:18 EDT" name="validateFormTest" finished-at="2022-08-13T05:06:19 EDT" duration-ms="626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateFormTest -->
-        <test-method signature="validatePageTitleTest()[pri:0, instance:admin.AdminEditProductTest@715b886f]" started-at="2022-08-13T04:19:29 EDT" name="validatePageTitleTest" finished-at="2022-08-13T04:19:30 EDT" duration-ms="202" status="PASS">
+        <test-method signature="validatePageTitleTest()[pri:0, instance:admin.AdminEditProductTest@4f8b4bd0]" started-at="2022-08-13T05:06:19 EDT" name="validatePageTitleTest" finished-at="2022-08-13T05:06:19 EDT" duration-ms="198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePageTitleTest -->
-        <test-method signature="validateSuccessMessageTest()[pri:0, instance:admin.AdminEditProductTest@715b886f]" started-at="2022-08-13T04:19:30 EDT" name="validateSuccessMessageTest" finished-at="2022-08-13T04:19:30 EDT" duration-ms="515" status="PASS">
+        <test-method signature="validateSuccessMessageTest()[pri:0, instance:admin.AdminEditProductTest@4f8b4bd0]" started-at="2022-08-13T05:06:19 EDT" name="validateSuccessMessageTest" finished-at="2022-08-13T05:06:20 EDT" duration-ms="352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSuccessMessageTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:admin.AdminEditProductTest@715b886f]" started-at="2022-08-13T04:19:30 EDT" name="close" finished-at="2022-08-13T04:19:30 EDT" duration-ms="76" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:admin.AdminEditProductTest@4f8b4bd0]" started-at="2022-08-13T05:06:20 EDT" name="close" finished-at="2022-08-13T05:06:20 EDT" duration-ms="93" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

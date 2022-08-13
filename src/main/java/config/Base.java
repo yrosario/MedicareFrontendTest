@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Base {
@@ -28,10 +29,13 @@ public class Base {
 		String browserName = prop.getProperty("browser");
 		String folderPath = prop.getProperty("folderPath");
 		
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("headless");
+		options.addArguments("disable-gpu");
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", folderPath + "//chromedriver");
-			webDriver = new ChromeDriver();
+			webDriver = new ChromeDriver(options);
 		}else if(browserName.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.firefox.driver", folderPath + "//firefoxdriver");
 			webDriver = new FirefoxDriver();
