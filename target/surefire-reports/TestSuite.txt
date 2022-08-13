@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 25, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 26.647 sec <<< FAILURE! - in TestSuite
+validateSuccessMessageTest(admin.AdminEditProductTest)  Time elapsed: 1.268 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element is not clickable at point (302, 744)
+  (Session info: headless chrome=104.0.5112.79)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'fedora', ip: '192.168.1.37', os.name: 'Linux', os.arch: 'amd64', os.version: '5.18.13-200.fc36.x86_64', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1a8e89a1aed6cc5db43b8b54c0b1a85a, clickElement {id=201e6381-03c0-47c0-a508-efc3cc879865}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /tmp/.com.google.Chrome.gSvfnL}, goog:chromeOptions: {debuggerAddress: localhost:43873}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43873/devtoo..., se:cdpVersion: 104.0.5112.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (1a8e89a1aed6cc5db43b8b54c0b1a85a)] -> id: prod-submit-btn]
+Session ID: 1a8e89a1aed6cc5db43b8b54c0b1a85a
+	at admin.AdminEditProductTest.validateSuccessMessageTest(AdminEditProductTest.java:72)
+

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="26.647" tests="25" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.4+8"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-17.0.4.0.8-1.fc36.x86_64/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/agentsmith/cap/MedicareFrontEndTest"/>
+    <property name="java.vm.vendor" value="Red Hat, Inc."/>
+    <property name="java.vendor.url" value="https://www.redhat.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/agentsmith/cap/MedicareFrontEndTest"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="17.0.4+8"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="5.18.13-200.fc36.x86_64"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
+    <property name="user.home" value="/home/agentsmith"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="agentsmith"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.home" value="/usr/lib/jvm/java-17-openjdk-17.0.4.0.8-1.fc36.x86_64"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17.0.4"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Red Hat, Inc."/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2022-07-19"/>
+    <property name="java.vendor.url.bug" value="https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora&amp;component=java-17-openjdk&amp;version=36"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="(Red_Hat-17.0.4.0.8-1.fc36)"/>
+    <property name="sun.stdout.encoding" value="UTF-8"/>
+  </properties>
+  <testcase name="testProductId" classname="admin.AdminEditProductTest" time="0.807"/>
+  <testcase name="validateFormTest" classname="admin.AdminEditProductTest" time="0.674"/>
+  <testcase name="validatePageTitleTest" classname="admin.AdminEditProductTest" time="0.19"/>
+  <testcase name="validateSuccessMessageTest" classname="admin.AdminEditProductTest" time="1.268">
+    <failure message="element click intercepted: Element is not clickable at point (302, 744)&#10;  (Session info: headless chrome=104.0.5112.79)&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;fedora&apos;, ip: &apos;192.168.1.37&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.18.13-200.fc36.x86_64&apos;, java.version: &apos;17.0.4&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [1a8e89a1aed6cc5db43b8b54c0b1a85a, clickElement {id=201e6381-03c0-47c0-a508-efc3cc879865}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /tmp/.com.google.Chrome.gSvfnL}, goog:chromeOptions: {debuggerAddress: localhost:43873}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43873/devtoo..., se:cdpVersion: 104.0.5112.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on LINUX (1a8e89a1aed6cc5db43b8b54c0b1a85a)] -&gt; id: prod-submit-btn]&#10;Session ID: 1a8e89a1aed6cc5db43b8b54c0b1a85a" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element is not clickable at point (302, 744)
+  (Session info: headless chrome=104.0.5112.79)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'fedora', ip: '192.168.1.37', os.name: 'Linux', os.arch: 'amd64', os.version: '5.18.13-200.fc36.x86_64', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1a8e89a1aed6cc5db43b8b54c0b1a85a, clickElement {id=201e6381-03c0-47c0-a508-efc3cc879865}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /tmp/.com.google.Chrome.gSvfnL}, goog:chromeOptions: {debuggerAddress: localhost:43873}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43873/devtoo..., se:cdpVersion: 104.0.5112.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (1a8e89a1aed6cc5db43b8b54c0b1a85a)] -> id: prod-submit-btn]
+Session ID: 1a8e89a1aed6cc5db43b8b54c0b1a85a
+	at admin.AdminEditProductTest.validateSuccessMessageTest(AdminEditProductTest.java:72)
+</failure>
+  </testcase>
+  <testcase name="EditBtnTest" classname="admin.AdminTest" time="0.881"/>
+  <testcase name="validateHeadersTest" classname="admin.AdminTest" time="0.163"/>
+  <testcase name="validatePageTitleTest" classname="admin.AdminTest" time="0.145"/>
+  <testcase name="validatePriceTest" classname="admin.AdminTest" time="0.399"/>
+  <testcase name="badLoginTest" classname="login.LoginTest" time="1.342"/>
+  <testcase name="testEmptyPassword" classname="login.LoginTest" time="0.465"/>
+  <testcase name="testEmptyUsername" classname="login.LoginTest" time="0.453"/>
+  <testcase name="validatePageTitleTest" classname="login.LoginTest" time="0.289"/>
+  <testcase name="ExistingUserTest" classname="login.RegistrationTest" time="1.683"/>
+  <testcase name="InvalidPasswodTest" classname="login.RegistrationTest" time="0.951"/>
+  <testcase name="ValidRegistrationTest" classname="login.RegistrationTest" time="6.078"/>
+  <testcase name="disableBtnTest" classname="login.RegistrationTest" time="0.96"/>
+  <testcase name="invalidEmailTest" classname="login.RegistrationTest" time="1.066"/>
+  <testcase name="validatePageTitleTest" classname="login.RegistrationTest" time="0.149"/>
+  <testcase name="buttonNotLoginTest" classname="shop.ShopTest" time="0.943"/>
+  <testcase name="buttonTest" classname="shop.ShopTest" time="0.649"/>
+  <testcase name="categoryTest" classname="shop.ShopTest" time="1.568"/>
+  <testcase name="prodBuyBtnNotLoginTest" classname="shop.ShopTest" time="0.45"/>
+  <testcase name="productListTest" classname="shop.ShopTest" time="0.179"/>
+  <testcase name="searchTest" classname="shop.ShopTest" time="0.745"/>
+  <testcase name="validatePageTitleTest" classname="shop.ShopTest" time="0.19"/>
+</testsuite>

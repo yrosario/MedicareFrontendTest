@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">25 methods, 1 failed,   24 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="admin.AdminEditProductTest" class="method navigator-link" hash-for-method="validateSuccessMessageTest">validateSuccessMessageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="admin.AdminTest" class="method navigator-link" hash-for-method="EditBtnTest">EditBtnTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="login.RegistrationTest" class="method navigator-link" hash-for-method="ExistingUserTest">ExistingUserTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="login.RegistrationTest" class="method navigator-link" hash-for-method="InvalidPasswodTest">InvalidPasswodTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="login.RegistrationTest" class="method navigator-link" hash-for-method="ValidRegistrationTest">ValidRegistrationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="login.LoginTest" class="method navigator-link" hash-for-method="badLoginTest">badLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="shop.ShopTest" class="method navigator-link" hash-for-method="buttonNotLoginTest">buttonNotLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="shop.ShopTest" class="method navigator-link" hash-for-method="buttonTest">buttonTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="shop.ShopTest" class="method navigator-link" hash-for-method="categoryTest">categoryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="login.RegistrationTest" class="method navigator-link" hash-for-method="disableBtnTest">disableBtnTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="login.RegistrationTest" class="method navigator-link" hash-for-method="invalidEmailTest">invalidEmailTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="shop.ShopTest" class="method navigator-link" hash-for-method="prodBuyBtnNotLoginTest">prodBuyBtnNotLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="shop.ShopTest" class="method navigator-link" hash-for-method="productListTest">productListTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="shop.ShopTest" class="method navigator-link" hash-for-method="searchTest">searchTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="login.LoginTest" class="method navigator-link" hash-for-method="testEmptyPassword">testEmptyPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="login.LoginTest" class="method navigator-link" hash-for-method="testEmptyUsername">testEmptyUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="admin.AdminEditProductTest" class="method navigator-link" hash-for-method="testProductId">testProductId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="admin.AdminEditProductTest" class="method navigator-link" hash-for-method="validateFormTest">validateFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="admin.AdminTest" class="method navigator-link" hash-for-method="validateHeadersTest">validateHeadersTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="shop.ShopTest" class="method navigator-link" hash-for-method="validatePageTitleTest">validatePageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="login.RegistrationTest" class="method navigator-link" hash-for-method="validatePageTitleTest">validatePageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="admin.AdminTest" class="method navigator-link" hash-for-method="validatePageTitleTest">validatePageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="admin.AdminEditProductTest" class="method navigator-link" hash-for-method="validatePageTitleTest">validatePageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="login.LoginTest" class="method navigator-link" hash-for-method="validatePageTitleTest">validatePageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="admin.AdminTest" class="method navigator-link" hash-for-method="validatePriceTest">validatePriceTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">admin.AdminEditProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSuccessMessageTest">
+                  </a> <!-- validateSuccessMessageTest -->
+                  <span class="method-name">validateSuccessMessageTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (302, 744)
+  (Session info: headless chrome=104.0.5112.79)
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;fedora&apos;, ip: &apos;192.168.1.37&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.18.13-200.fc36.x86_64&apos;, java.version: &apos;17.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1a8e89a1aed6cc5db43b8b54c0b1a85a, clickElement {id=201e6381-03c0-47c0-a508-efc3cc879865}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /tmp/.com.google.Chrome.gSvfnL}, goog:chromeOptions: {debuggerAddress: localhost:43873}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:43873/devtoo..., se:cdpVersion: 104.0.5112.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (1a8e89a1aed6cc5db43b8b54c0b1a85a)] -&gt; id: prod-submit-btn]
+Session ID: 1a8e89a1aed6cc5db43b8b54c0b1a85a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at admin.AdminEditProductTest.validateSuccessMessageTest(AdminEditProductTest.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">login.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ExistingUserTest">
+                  </a> <!-- ExistingUserTest -->
+                  <span class="method-name">ExistingUserTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidPasswodTest">
+                  </a> <!-- InvalidPasswodTest -->
+                  <span class="method-name">InvalidPasswodTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidRegistrationTest">
+                  </a> <!-- ValidRegistrationTest -->
+                  <span class="method-name">ValidRegistrationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="disableBtnTest">
+                  </a> <!-- disableBtnTest -->
+                  <span class="method-name">disableBtnTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidEmailTest">
+                  </a> <!-- invalidEmailTest -->
+                  <span class="method-name">invalidEmailTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePageTitleTest">
+                  </a> <!-- validatePageTitleTest -->
+                  <span class="method-name">validatePageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">login.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="badLoginTest">
+                  </a> <!-- badLoginTest -->
+                  <span class="method-name">badLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyPassword">
+                  </a> <!-- testEmptyPassword -->
+                  <span class="method-name">testEmptyPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyUsername">
+                  </a> <!-- testEmptyUsername -->
+                  <span class="method-name">testEmptyUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePageTitleTest">
+                  </a> <!-- validatePageTitleTest -->
+                  <span class="method-name">validatePageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">admin.AdminTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="EditBtnTest">
+                  </a> <!-- EditBtnTest -->
+                  <span class="method-name">EditBtnTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateHeadersTest">
+                  </a> <!-- validateHeadersTest -->
+                  <span class="method-name">validateHeadersTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePageTitleTest">
+                  </a> <!-- validatePageTitleTest -->
+                  <span class="method-name">validatePageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePriceTest">
+                  </a> <!-- validatePriceTest -->
+                  <span class="method-name">validatePriceTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">admin.AdminEditProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProductId">
+                  </a> <!-- testProductId -->
+                  <span class="method-name">testProductId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFormTest">
+                  </a> <!-- validateFormTest -->
+                  <span class="method-name">validateFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePageTitleTest">
+                  </a> <!-- validatePageTitleTest -->
+                  <span class="method-name">validatePageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">shop.ShopTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="buttonNotLoginTest">
+                  </a> <!-- buttonNotLoginTest -->
+                  <span class="method-name">buttonNotLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buttonTest">
+                  </a> <!-- buttonTest -->
+                  <span class="method-name">buttonTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="categoryTest">
+                  </a> <!-- categoryTest -->
+                  <span class="method-name">categoryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="prodBuyBtnNotLoginTest">
+                  </a> <!-- prodBuyBtnNotLoginTest -->
+                  <span class="method-name">prodBuyBtnNotLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productListTest">
+                  </a> <!-- productListTest -->
+                  <span class="method-name">productListTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchTest">
+                  </a> <!-- searchTest -->
+                  <span class="method-name">searchTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePageTitleTest">
+                  </a> <!-- validatePageTitleTest -->
+                  <span class="method-name">validatePageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;admin.AdminEditProductTest&quot;/&gt;
+      &lt;class name=&quot;admin.AdminTest&quot;/&gt;
+      &lt;class name=&quot;login.LoginTest&quot;/&gt;
+      &lt;class name=&quot;login.RegistrationTest&quot;/&gt;
+      &lt;class name=&quot;shop.ShopTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(25);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'ValidRegistrationTest')
+data.setCell(0, 2, 'login.RegistrationTest')
+data.setCell(0, 3, 6077);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ExistingUserTest')
+data.setCell(1, 2, 'login.RegistrationTest')
+data.setCell(1, 3, 1683);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'categoryTest')
+data.setCell(2, 2, 'shop.ShopTest')
+data.setCell(2, 3, 1568);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'badLoginTest')
+data.setCell(3, 2, 'login.LoginTest')
+data.setCell(3, 3, 1342);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateSuccessMessageTest')
+data.setCell(4, 2, 'admin.AdminEditProductTest')
+data.setCell(4, 3, 1249);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'invalidEmailTest')
+data.setCell(5, 2, 'login.RegistrationTest')
+data.setCell(5, 3, 1065);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'disableBtnTest')
+data.setCell(6, 2, 'login.RegistrationTest')
+data.setCell(6, 3, 959);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'InvalidPasswodTest')
+data.setCell(7, 2, 'login.RegistrationTest')
+data.setCell(7, 3, 952);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'buttonNotLoginTest')
+data.setCell(8, 2, 'shop.ShopTest')
+data.setCell(8, 3, 943);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'EditBtnTest')
+data.setCell(9, 2, 'admin.AdminTest')
+data.setCell(9, 3, 881);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testProductId')
+data.setCell(10, 2, 'admin.AdminEditProductTest')
+data.setCell(10, 3, 806);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'searchTest')
+data.setCell(11, 2, 'shop.ShopTest')
+data.setCell(11, 3, 744);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validateFormTest')
+data.setCell(12, 2, 'admin.AdminEditProductTest')
+data.setCell(12, 3, 676);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'buttonTest')
+data.setCell(13, 2, 'shop.ShopTest')
+data.setCell(13, 3, 650);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testEmptyPassword')
+data.setCell(14, 2, 'login.LoginTest')
+data.setCell(14, 3, 466);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testEmptyUsername')
+data.setCell(15, 2, 'login.LoginTest')
+data.setCell(15, 3, 454);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'prodBuyBtnNotLoginTest')
+data.setCell(16, 2, 'shop.ShopTest')
+data.setCell(16, 3, 449);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'validatePriceTest')
+data.setCell(17, 2, 'admin.AdminTest')
+data.setCell(17, 3, 399);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'validatePageTitleTest')
+data.setCell(18, 2, 'login.LoginTest')
+data.setCell(18, 3, 290);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'validatePageTitleTest')
+data.setCell(19, 2, 'shop.ShopTest')
+data.setCell(19, 3, 190);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'validatePageTitleTest')
+data.setCell(20, 2, 'admin.AdminEditProductTest')
+data.setCell(20, 3, 190);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'productListTest')
+data.setCell(21, 2, 'shop.ShopTest')
+data.setCell(21, 3, 180);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'validateHeadersTest')
+data.setCell(22, 2, 'admin.AdminTest')
+data.setCell(22, 3, 164);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'validatePageTitleTest')
+data.setCell(23, 2, 'login.RegistrationTest')
+data.setCell(23, 3, 148);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'validatePageTitleTest')
+data.setCell(24, 2, 'admin.AdminTest')
+data.setCell(24, 3, 146);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">admin.AdminEditProductTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testProductId</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateFormTest</span>
+                <span class="method-start">808 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validatePageTitleTest</span>
+                <span class="method-start">1485 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateSuccessMessageTest</span>
+                <span class="method-start">1677 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">admin.AdminTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">EditBtnTest</span>
+                <span class="method-start">2946 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateHeadersTest</span>
+                <span class="method-start">3828 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validatePageTitleTest</span>
+                <span class="method-start">3993 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validatePriceTest</span>
+                <span class="method-start">4140 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">login.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">badLoginTest</span>
+                <span class="method-start">4540 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmptyPassword</span>
+                <span class="method-start">5883 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmptyUsername</span>
+                <span class="method-start">6350 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validatePageTitleTest</span>
+                <span class="method-start">6805 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">login.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ExistingUserTest</span>
+                <span class="method-start">7097 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">InvalidPasswodTest</span>
+                <span class="method-start">8781 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ValidRegistrationTest</span>
+                <span class="method-start">9734 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">disableBtnTest</span>
+                <span class="method-start">15813 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidEmailTest</span>
+                <span class="method-start">16774 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validatePageTitleTest</span>
+                <span class="method-start">17841 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">shop.ShopTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">buttonNotLoginTest</span>
+                <span class="method-start">17991 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">buttonTest</span>
+                <span class="method-start">18935 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">categoryTest</span>
+                <span class="method-start">19586 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">prodBuyBtnNotLoginTest</span>
+                <span class="method-start">21156 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">productListTest</span>
+                <span class="method-start">21606 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchTest</span>
+                <span class="method-start">21787 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validatePageTitleTest</span>
+                <span class="method-start">22533 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">admin.AdminEditProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">close</span>
+                <span class="method-start">22725 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">admin.AdminTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">close</span>
+                <span class="method-start">22796 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">login.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">close</span>
+                <span class="method-start">22856 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">login.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">close</span>
+                <span class="method-start">22916 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">shop.ShopTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">close</span>
+                <span class="method-start">22978 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

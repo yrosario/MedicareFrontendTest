@@ -1,0 +1,7 @@
+config/Base.class
+webpages/ShopPage.class
+webpages/LoginPage.class
+webpages/RegistrationPage.class
+webpages/EditProductPage.class
+webpages/LandingPage.class
+webpages/AdminPage.class
