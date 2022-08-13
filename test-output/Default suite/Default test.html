@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>25/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>24/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 12 20:45:37 EDT 2022</td>
+<td>Started on:</td><td>Sat Aug 13 01:45:39 EDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>30 seconds (30852 ms)</td>
+<tr><td>Total time:</td><td>25 seconds (25850 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,85 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='admin.AdminEditProductTest.testProductId()'><b>testProductId</b><br>Test class: admin.AdminEditProductTest</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;ID&gt; but was:&lt;ID 1&gt;
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+	at admin.AdminEditProductTest.testProductId(AdminEditProductTest.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1952031262", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1952031262'><pre>java.lang.AssertionError: expected:&lt;ID&gt; but was:&lt;ID 1&gt;
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+	at admin.AdminEditProductTest.testProductId(AdminEditProductTest.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>admin.AdminEditProductTest@56dfab87</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,27 +155,47 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='shop.ShopTest.searchTest()'><b>searchTest</b><br>Test class: shop.ShopTest</td>
+<td></td>
+<td>0</td>
+<td>shop.ShopTest@2babf189</td></tr>
+<tr>
+<td title='admin.AdminTest.validateHeadersTest()'><b>validateHeadersTest</b><br>Test class: admin.AdminTest</td>
+<td></td>
+<td>0</td>
+<td>admin.AdminTest@2a9bc08f</td></tr>
+<tr>
+<td title='login.LoginTest.testEmptyPassword()'><b>testEmptyPassword</b><br>Test class: login.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>login.LoginTest@17b6d426</td></tr>
+<tr>
 <td title='admin.AdminEditProductTest.validateFormTest()'><b>validateFormTest</b><br>Test class: admin.AdminEditProductTest</td>
 <td></td>
 <td>0</td>
-<td>admin.AdminEditProductTest@317a118b</td></tr>
-<tr>
-<td title='login.RegistrationTest.ValidRegistrationTest()'><b>ValidRegistrationTest</b><br>Test class: login.RegistrationTest</td>
-<td></td>
-<td>5</td>
-<td>login.RegistrationTest@7a8406c2</td></tr>
+<td>admin.AdminEditProductTest@56dfab87</td></tr>
 <tr>
 <td title='admin.AdminEditProductTest.validateSuccessMessageTest()'><b>validateSuccessMessageTest</b><br>Test class: admin.AdminEditProductTest</td>
 <td></td>
 <td>0</td>
-<td>admin.AdminEditProductTest@317a118b</td></tr>
+<td>admin.AdminEditProductTest@56dfab87</td></tr>
 <tr>
-<td title='login.RegistrationTest.disableBtnTest()'><b>disableBtnTest</b><br>Test class: login.RegistrationTest</td>
+<td title='admin.AdminTest.EditBtnTest()'><b>EditBtnTest</b><br>Test class: admin.AdminTest</td>
 <td></td>
-<td>4</td>
-<td>login.RegistrationTest@7a8406c2</td></tr>
+<td>1</td>
+<td>admin.AdminTest@2a9bc08f</td></tr>
 <tr>
-<td title='shop.ShopTest.searchTest()'><b>searchTest</b><br>Test class: shop.ShopTest</td>
+<td title='login.RegistrationTest.invalidEmailTest()'><b>invalidEmailTest</b><br>Test class: login.RegistrationTest</td>
+<td></td>
+<td>0</td>
+<td>login.RegistrationTest@17690e14</td></tr>
+<tr>
+<td title='admin.AdminTest.validatePageTitleTest()'><b>validatePageTitleTest</b><br>Test class: admin.AdminTest</td>
+<td></td>
+<td>0</td>
+<td>admin.AdminTest@2a9bc08f</td></tr>
+<tr>
+<td title='shop.ShopTest.buttonNotLoginTest()'><b>buttonNotLoginTest</b><br>Test class: shop.ShopTest</td>
 <td></td>
 <td>0</td>
 <td>shop.ShopTest@2babf189</td></tr>
@@ -106,100 +205,75 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>shop.ShopTest@2babf189</td></tr>
 <tr>
-<td title='login.LoginTest.testEmptyUsername()'><b>testEmptyUsername</b><br>Test class: login.LoginTest</td>
+<td title='login.RegistrationTest.disableBtnTest()'><b>disableBtnTest</b><br>Test class: login.RegistrationTest</td>
 <td></td>
 <td>0</td>
-<td>login.LoginTest@17b6d426</td></tr>
+<td>login.RegistrationTest@17690e14</td></tr>
 <tr>
 <td title='login.LoginTest.validatePageTitleTest()'><b>validatePageTitleTest</b><br>Test class: login.LoginTest</td>
 <td></td>
 <td>0</td>
 <td>login.LoginTest@17b6d426</td></tr>
 <tr>
-<td title='login.RegistrationTest.InvalidPasswodTest()'><b>InvalidPasswodTest</b><br>Test class: login.RegistrationTest</td>
+<td title='shop.ShopTest.productListTest()'><b>productListTest</b><br>Test class: shop.ShopTest</td>
 <td></td>
-<td>0</td>
-<td>login.RegistrationTest@7a8406c2</td></tr>
-<tr>
-<td title='admin.AdminTest.EditBtnTest()'><b>EditBtnTest</b><br>Test class: admin.AdminTest</td>
-<td></td>
-<td>0</td>
-<td>admin.AdminTest@2063c53e</td></tr>
+<td>3</td>
+<td>shop.ShopTest@2babf189</td></tr>
 <tr>
 <td title='shop.ShopTest.prodBuyBtnNotLoginTest()'><b>prodBuyBtnNotLoginTest</b><br>Test class: shop.ShopTest</td>
 <td></td>
 <td>0</td>
 <td>shop.ShopTest@2babf189</td></tr>
 <tr>
+<td title='shop.ShopTest.validatePageTitleTest()'><b>validatePageTitleTest</b><br>Test class: shop.ShopTest</td>
+<td></td>
+<td>0</td>
+<td>shop.ShopTest@2babf189</td></tr>
+<tr>
+<td title='login.RegistrationTest.InvalidPasswodTest()'><b>InvalidPasswodTest</b><br>Test class: login.RegistrationTest</td>
+<td></td>
+<td>0</td>
+<td>login.RegistrationTest@17690e14</td></tr>
+<tr>
+<td title='admin.AdminTest.validatePriceTest()'><b>validatePriceTest</b><br>Test class: admin.AdminTest</td>
+<td></td>
+<td>0</td>
+<td>admin.AdminTest@2a9bc08f</td></tr>
+<tr>
+<td title='login.RegistrationTest.ValidRegistrationTest()'><b>ValidRegistrationTest</b><br>Test class: login.RegistrationTest</td>
+<td></td>
+<td>5</td>
+<td>login.RegistrationTest@17690e14</td></tr>
+<tr>
 <td title='login.RegistrationTest.validatePageTitleTest()'><b>validatePageTitleTest</b><br>Test class: login.RegistrationTest</td>
 <td></td>
 <td>0</td>
-<td>login.RegistrationTest@7a8406c2</td></tr>
+<td>login.RegistrationTest@17690e14</td></tr>
 <tr>
-<td title='admin.AdminEditProductTest.testProductId()'><b>testProductId</b><br>Test class: admin.AdminEditProductTest</td>
+<td title='login.LoginTest.testEmptyUsername()'><b>testEmptyUsername</b><br>Test class: login.LoginTest</td>
 <td></td>
 <td>0</td>
-<td>admin.AdminEditProductTest@317a118b</td></tr>
+<td>login.LoginTest@17b6d426</td></tr>
+<tr>
+<td title='shop.ShopTest.categoryTest()'><b>categoryTest</b><br>Test class: shop.ShopTest</td>
+<td></td>
+<td>0</td>
+<td>shop.ShopTest@2babf189</td></tr>
+<tr>
+<td title='admin.AdminEditProductTest.validatePageTitleTest()'><b>validatePageTitleTest</b><br>Test class: admin.AdminEditProductTest</td>
+<td></td>
+<td>0</td>
+<td>admin.AdminEditProductTest@56dfab87</td></tr>
 <tr>
 <td title='login.LoginTest.badLoginTest()'><b>badLoginTest</b><br>Test class: login.LoginTest</td>
 <td></td>
 <td>1</td>
 <td>login.LoginTest@17b6d426</td></tr>
 <tr>
-<td title='shop.ShopTest.validatePageTitleTest()'><b>validatePageTitleTest</b><br>Test class: shop.ShopTest</td>
-<td></td>
-<td>0</td>
-<td>shop.ShopTest@2babf189</td></tr>
-<tr>
 <td title='login.RegistrationTest.ExistingUserTest()'><b>ExistingUserTest</b><br>Test class: login.RegistrationTest</td>
 <td></td>
-<td>1</td>
-<td>login.RegistrationTest@7a8406c2</td></tr>
-<tr>
-<td title='admin.AdminTest.validatePageTitleTest()'><b>validatePageTitleTest</b><br>Test class: admin.AdminTest</td>
-<td></td>
-<td>0</td>
-<td>admin.AdminTest@2063c53e</td></tr>
-<tr>
-<td title='login.RegistrationTest.invalidEmailTest()'><b>invalidEmailTest</b><br>Test class: login.RegistrationTest</td>
-<td></td>
-<td>0</td>
-<td>login.RegistrationTest@7a8406c2</td></tr>
-<tr>
-<td title='login.LoginTest.testEmptyPassword()'><b>testEmptyPassword</b><br>Test class: login.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>login.LoginTest@17b6d426</td></tr>
-<tr>
-<td title='admin.AdminEditProductTest.validatePageTitleTest()'><b>validatePageTitleTest</b><br>Test class: admin.AdminEditProductTest</td>
-<td></td>
-<td>0</td>
-<td>admin.AdminEditProductTest@317a118b</td></tr>
-<tr>
-<td title='shop.ShopTest.productListTest()'><b>productListTest</b><br>Test class: shop.ShopTest</td>
-<td></td>
-<td>0</td>
-<td>shop.ShopTest@2babf189</td></tr>
-<tr>
-<td title='admin.AdminTest.validateHeadersTest()'><b>validateHeadersTest</b><br>Test class: admin.AdminTest</td>
-<td></td>
-<td>0</td>
-<td>admin.AdminTest@2063c53e</td></tr>
-<tr>
-<td title='shop.ShopTest.categoryTest()'><b>categoryTest</b><br>Test class: shop.ShopTest</td>
-<td></td>
-<td>10</td>
-<td>shop.ShopTest@2babf189</td></tr>
-<tr>
-<td title='shop.ShopTest.buttonNotLoginTest()'><b>buttonNotLoginTest</b><br>Test class: shop.ShopTest</td>
-<td></td>
-<td>0</td>
-<td>shop.ShopTest@2babf189</td></tr>
-<tr>
-<td title='admin.AdminTest.validatePriceTest()'><b>validatePriceTest</b><br>Test class: admin.AdminTest</td>
-<td></td>
-<td>0</td>
-<td>admin.AdminTest@2063c53e</td></tr>
+<td>3</td>
+<td>login.RegistrationTest@17690e14</td></tr>
 </table><p>
 </body>
 </html>

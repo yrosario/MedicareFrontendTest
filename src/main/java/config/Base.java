@@ -22,7 +22,7 @@ public class Base {
 	public void initializerDriver() throws Exception
 	{
 		Properties prop = new Properties();
-		FileInputStream fileStream = new FileInputStream("src/main/resources/data.properties");
+		FileInputStream fileStream = new FileInputStream("src//main//resources//data.properties");
 		
 		prop.load(fileStream);
 		String browserName = prop.getProperty("browser");
@@ -30,10 +30,10 @@ public class Base {
 		
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", folderPath + "/chromedriver");
+			System.setProperty("webdriver.chrome.driver", folderPath + "//chromedriver");
 			webDriver = new ChromeDriver();
 		}else if(browserName.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.firefox.driver", folderPath + "/firefoxdriver");
+			System.setProperty("webdriver.firefox.driver", folderPath + "//firefoxdriver");
 			webDriver = new FirefoxDriver();
 		}else {
 			throw new Exception("Web driver is null");
