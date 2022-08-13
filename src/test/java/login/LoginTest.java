@@ -1,8 +1,12 @@
 package login;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
 
@@ -13,17 +17,30 @@ import webpages.LoginPage;
 public class LoginTest extends Base {
 	
 	private WebDriver webDriver;
+	private final String baseURL;
 
 	public LoginTest() throws Exception {
 		super();
 		super.initializerDriver();
 		webDriver = super.getWebDriver();
 		
+		Properties prop = new Properties();
+		FileInputStream fileStream = new FileInputStream("src"
+				+ "/main/resources/data.properties");
+		
+		prop.load(fileStream);
+		baseURL = prop.getProperty("baseUrl");
+		
+		
+		if(baseURL.equals("") || baseURL == null) {
+			throw new Exception("baseURL is empty or is NULL");
+		}
+		
 	}
 
 	@Test
 	public void validatePageTitleTest() {
-		 webDriver.get("http://localhost:4200/login/");
+		 webDriver.get(baseURL+"/login/");
 		
 		//Navigate to login page from landing page
 		LandingPage lpage = new LandingPage(webDriver);
@@ -31,13 +48,13 @@ public class LoginTest extends Base {
 		
 		LoginPage loginPage = new LoginPage(webDriver);
 		//System.out.println("OUTPUT HERE" + loginPage.getTitle().getText());
-		Assert.assertEquals(loginPage.getTitle().getText(),"Login");
+		AssertJUnit.assertEquals(loginPage.getTitle().getText(),"Login");
 	}
 	
 	
 	@Test()
 	public void badLoginTest() throws Exception {
-		webDriver.get("http://localhost:4200");
+		webDriver.get(baseURL+"");
 
 		//Navigate to login page from landing page
 		LandingPage lpage = new LandingPage(webDriver);
@@ -49,7 +66,7 @@ public class LoginTest extends Base {
 		loginPage.getPassword().sendKeys("bad password");
 		loginPage.getLoginBtn().click();
 		
-		Assert.assertEquals(loginPage.getLoginWarning().getText(), "Wrong username or password");
+		AssertJUnit.assertEquals(loginPage.getLoginWarning().getText(), "Wrong username or password");
 	}
 	
 	
@@ -67,7 +84,7 @@ public class LoginTest extends Base {
 		loginPage.getPassword().sendKeys("");
 		boolean isEnable = loginPage.getLoginBtn().isEnabled();
 		
-		Assert.assertEquals(isEnable, true);
+		AssertJUnit.assertEquals(isEnable, true);
 	}
 	
 	@Test
@@ -84,24 +101,9 @@ public class LoginTest extends Base {
 		loginPage.getPassword().sendKeys("badpassword");
 		boolean isEnable = loginPage.getLoginBtn().isEnabled();
 		
-		Assert.assertEquals(isEnable, true);
+		AssertJUnit.assertEquals(isEnable, true);
 	}
-//	
-//	@Test(dataProvider="getData")
-//	public void getLogin(String username, String password) throws Exception {
-//		webDriver.get("http://localhost:4200");
-//
-//		//Navigate to login page from landing page
-//		LandingPage lpage = new LandingPage(webDriver);
-//		lpage.getLogin().click();
-//		
-//		//Login using test credentials
-//		LoginPage loginPage = new LoginPage(webDriver);
-//		loginPage.getUsername().sendKeys(username);
-//		loginPage.getPassword().sendKeys(password);
-//		loginPage.getLoginBtn().click();
-//			
-//	}
+
 	
 	@DataProvider
 	public Object[][] getData() {

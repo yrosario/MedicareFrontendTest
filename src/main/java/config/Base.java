@@ -18,17 +18,16 @@ public class Base {
 	}
 
 
+	@SuppressWarnings("deprecation")
 	public void initializerDriver() throws Exception
 	{
 		Properties prop = new Properties();
-		FileInputStream fileStream = new FileInputStream("/home/agentsmith/cap/MedicareFrontEndTest"
-				+ "/src/main/resources/data.properties");
+		FileInputStream fileStream = new FileInputStream("src/main/resources/data.properties");
 		
 		prop.load(fileStream);
 		String browserName = prop.getProperty("browser");
 		String folderPath = prop.getProperty("folderPath");
 		
-		System.out.println(folderPath);
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", folderPath + "/chromedriver");

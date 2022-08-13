@@ -1,10 +1,13 @@
 package admin;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 
+
+import java.io.FileInputStream;
+import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
 import config.Base;
@@ -14,40 +17,54 @@ import webpages.EditProductPage;
 public class AdminEditProductTest extends Base {
 	
 	private WebDriver webDriver;
+	private final String baseURL;
 
 	public AdminEditProductTest() throws Exception {
 		super();
 		super.initializerDriver();
 		webDriver = super.getWebDriver();
 		
+		Properties prop = new Properties();
+		FileInputStream fileStream = new FileInputStream("src"
+				+ "/main/resources/data.properties");
+		
+		prop.load(fileStream);
+		baseURL = prop.getProperty("baseUrl");
+		
+		
+		if(baseURL.equals("") || baseURL == null) {
+			throw new Exception("baseURL is empty or is NULL");
+		}
+		
+		
 	}
 
 	@Test
 	public void validatePageTitleTest() {
-		 webDriver.get("http://localhost:4200/admin/manage-products/edit-product/1");
+		 webDriver.get(baseURL + "/admin/manage-products/edit-product/1");
 		
 		
 		EditProductPage editProductPage = new EditProductPage(webDriver);
 		
 		String result = editProductPage.getTitle().getText();
-		Assert.assertEquals(result,"Edit Product");
+		AssertJUnit.assertEquals(result,"Edit Product");
 	}
 	
 	@Test
 	public void testProductId() {
-		 webDriver.get("http://localhost:4200/admin/manage-products/edit-product/1");
+		 webDriver.get(baseURL+"/admin/manage-products/edit-product/1");
 		
 		
 		EditProductPage editProductPage = new EditProductPage(webDriver);
 		
 		String result = editProductPage.getId().getText();
-		Assert.assertEquals(result,"ID 1");
+		AssertJUnit.assertEquals(result,"ID 1");
 	}
 	
 	
 	@Test
 	public void validateSuccessMessageTest() {
-		 webDriver.get("http://localhost:4200/admin/manage-products/edit-product/1");
+		 webDriver.get(baseURL+"/admin/manage-products/edit-product/1");
 		
 		
 		EditProductPage editProductPage = new EditProductPage(webDriver);
@@ -55,13 +72,13 @@ public class AdminEditProductTest extends Base {
 		editProductPage.getUpdateBtn().click();
 
 		String result = editProductPage.getUpdateSuccessMsg().getText();
-		Assert.assertEquals(result,"Product was saved successfully! Go Product Admin Page");
+		AssertJUnit.assertEquals(result,"Product was saved successfully! Go Product Admin Page");
 	}
 	
 	
 	@Test
 	public void validateFormTest() {
-		 webDriver.get("http://localhost:4200/admin/manage-products/edit-product/1");
+		 webDriver.get(baseURL+"/admin/manage-products/edit-product/1");
 		
 		
 		EditProductPage editProductPage = new EditProductPage(webDriver);
@@ -72,7 +89,7 @@ public class AdminEditProductTest extends Base {
 		editProductPage.getPrice().sendKeys("");
 		
 		boolean result = editProductPage.getUpdateBtn().isEnabled();
-		Assert.assertEquals(result,true);
+		AssertJUnit.assertEquals(result,true);
 	}
 	
 

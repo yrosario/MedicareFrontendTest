@@ -1,8 +1,13 @@
 package login;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
 import config.Base;
@@ -12,28 +17,41 @@ import webpages.RegistrationPage;
 public class RegistrationTest extends Base {
 	
 	private WebDriver webDriver;
+	private final String baseURL;
 
 	public RegistrationTest() throws Exception {
 		super();
 		super.initializerDriver();
 		webDriver = super.getWebDriver();
 		
+		Properties prop = new Properties();
+		FileInputStream fileStream = new FileInputStream("src"
+				+ "/main/resources/data.properties");
+		
+		prop.load(fileStream);
+		baseURL = prop.getProperty("baseUrl");
+		
+		
+		if(baseURL.equals("") || baseURL == null) {
+			throw new Exception("baseURL is empty or is NULL");
+		}
+		
 	}
 
 	@Test
 	public void validatePageTitleTest() {
-		 webDriver.get("http://localhost:4200/register");
+		 webDriver.get(baseURL+"/register");
 		
 		
 		RegistrationPage regPage = new RegistrationPage(webDriver);
 		
 		String result = regPage.getTitle().getText();
-		Assert.assertEquals(result,"Register New User");
+		AssertJUnit.assertEquals(result,"Register New User");
 	}
 	
 	@Test
 	public void ExistingUserTest() {
-        webDriver.get("http://localhost:4200/register");
+        webDriver.get(baseURL+"/register");
 		RegistrationPage regPage = new RegistrationPage(webDriver);
 		
 		regPage.getFirtname().sendKeys("test");
@@ -46,12 +64,12 @@ public class RegistrationTest extends Base {
 		
 		String result = regPage.getInvalidMessage().getText();
 		
-		Assert.assertEquals(result, "The was an error with form. Review the form!");
+		AssertJUnit.assertEquals(result, "The was an error with form. Review the form!");
 	}
 	
 	@Test
 	public void InvalidPasswodTest() {
-        webDriver.get("http://localhost:4200/register");
+        webDriver.get(baseURL+"/register");
 		RegistrationPage regPage = new RegistrationPage(webDriver);
 		
 		regPage.getFirtname().sendKeys("test");
@@ -64,12 +82,12 @@ public class RegistrationTest extends Base {
 		
 		String result = regPage.getInvalidPasswordMsg().getText();
 		
-		Assert.assertEquals(result, "Password doesn't match");
+		AssertJUnit.assertEquals(result, "Password doesn't match");
 	}
 	
 	@Test
 	public void ValidRegistrationTest() {
-        webDriver.get("http://localhost:4200/register");
+        webDriver.get(baseURL+"/register");
 		RegistrationPage regPage = new RegistrationPage(webDriver);
 		
 		int rndInt = (int) (1000000 *  Math.random());
@@ -89,13 +107,13 @@ public class RegistrationTest extends Base {
 		
 		
 		
-		Assert.assertEquals(result, "Login");
+		AssertJUnit.assertEquals(result, "Login");
 	}
 	
 	
 	@Test
 	public void disableBtnTest() {
-        webDriver.get("http://localhost:4200/register");
+        webDriver.get(baseURL+"/register");
 		RegistrationPage regPage = new RegistrationPage(webDriver);
 		
 		int rndInt = (int) (1000000 *  Math.random());
@@ -114,12 +132,12 @@ public class RegistrationTest extends Base {
 		
 		
 		
-		Assert.assertEquals(result, true);
+		AssertJUnit.assertEquals(result, true);
 	}
 	
 	@Test
 	public void invalidEmailTest() {
-        webDriver.get("http://localhost:4200/register");
+        webDriver.get(baseURL+"/register");
 		RegistrationPage regPage = new RegistrationPage(webDriver);
 		
 		int rndInt = (int) (1000000 *  Math.random());
@@ -138,7 +156,7 @@ public class RegistrationTest extends Base {
 		
 		
 		
-		Assert.assertEquals(result, true);
+		AssertJUnit.assertEquals(result, true);
 	}
 	
 	@AfterTest

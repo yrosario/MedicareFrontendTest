@@ -3,10 +3,43 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="login.LoginTest">
+        <methods>
+          <include name="badLoginTest"/>
+          <include name="testEmptyUsername"/>
+          <include name="close"/>
+          <include name="validatePageTitleTest"/>
+          <include name="testEmptyPassword"/>
+        </methods>
+      </class> <!-- login.LoginTest -->
+      <class name="login.RegistrationTest">
+        <methods>
+          <include name="disableBtnTest"/>
+          <include name="ExistingUserTest"/>
+          <include name="validatePageTitleTest"/>
+          <include name="invalidEmailTest"/>
+          <include name="InvalidPasswodTest"/>
+          <include name="ValidRegistrationTest"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- login.RegistrationTest -->
+      <class name="admin.AdminEditProductTest">
+        <methods>
+          <include name="validatePageTitleTest"/>
+          <include name="close"/>
+          <include name="validateSuccessMessageTest"/>
+          <include name="validateFormTest"/>
+          <include name="testProductId"/>
+        </methods>
+      </class> <!-- admin.AdminEditProductTest -->
+      <class name="admin.AdminTest">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- admin.AdminTest -->
       <class name="shop.ShopTest">
         <methods>
           <include name="close"/>
-          <include name="categoryTest"/>
         </methods>
       </class> <!-- shop.ShopTest -->
     </classes>

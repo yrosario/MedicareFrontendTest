@@ -1,15 +1,17 @@
 package shop;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 
+import java.io.FileInputStream;
 import java.util.List;
+import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
 import config.Base;
@@ -20,41 +22,54 @@ import webpages.ShopPage;
 public class ShopTest extends Base {
 	
 	private WebDriver webDriver;
+	private final String baseURL;
 
 	public ShopTest() throws Exception {
 		super();
 		super.initializerDriver();
 		webDriver = super.getWebDriver();
 		
+		Properties prop = new Properties();
+		FileInputStream fileStream = new FileInputStream("src"
+				+ "/main/resources/data.properties");
+		
+		prop.load(fileStream);
+		baseURL = prop.getProperty("baseUrl");
+		
+		
+		if(baseURL.equals("") || baseURL == null) {
+			throw new Exception("baseURL is empty or is NULL");
+		}
+		
 	}
 
 	@Test
 	public void validatePageTitleTest() {
-		 webDriver.get("http://localhost:4200/shop");
+		 webDriver.get(baseURL+"/shop");
 		
 		
 		ShopPage shopPage = new ShopPage(webDriver);
 		
 		String result = shopPage.getTitle().getText();
-		Assert.assertEquals(result,"Most Viewed Items");
+		AssertJUnit.assertEquals(result,"Most Viewed Items");
 	}
 	
 	@Test
 	public void productListTest() {
-		 webDriver.get("http://localhost:4200/shop");
+		 webDriver.get(baseURL+"/shop");
 		
 		
 		ShopPage shopPage = new ShopPage(webDriver);
 		
 		List<WebElement> products = shopPage.getProductsList();
 		
-		Assert.assertTrue(products.size() > 0);
+		AssertJUnit.assertTrue(products.size() > 0);
 
 	}
 	
 	@Test
 	public void buttonTest() {
-		 webDriver.get("http://localhost:4200/shop");
+		 webDriver.get(baseURL+"/shop");
 		
 		
 		ShopPage shopPage = new ShopPage(webDriver);
@@ -66,13 +81,13 @@ public class ShopTest extends Base {
 			result = result && ele.findElement(By.id("prod-cart-btn")).isDisplayed();
 		}
 		
-		Assert.assertTrue(result);
+		AssertJUnit.assertTrue(result);
 
 	}
 	
 	@Test
 	public void buttonNotLoginTest() {
-		 webDriver.get("http://localhost:4200/shop");
+		 webDriver.get(baseURL+"/shop");
 		
 		
 		ShopPage shopPage = new ShopPage(webDriver);
@@ -86,13 +101,13 @@ public class ShopTest extends Base {
 		LoginPage loginPage = new LoginPage(webDriver);
 		String result = loginPage.getTitle().getText();
 		
-		Assert.assertEquals(result,"Login");
+		AssertJUnit.assertEquals(result,"Login");
 
 	}
 	
 	@Test
 	public void prodBuyBtnNotLoginTest() {
-		 webDriver.get("http://localhost:4200/shop");
+		 webDriver.get(baseURL+"/shop");
 		
 		
 		ShopPage shopPage = new ShopPage(webDriver);
@@ -106,14 +121,14 @@ public class ShopTest extends Base {
 		LoginPage loginPage = new LoginPage(webDriver);
 		String result = loginPage.getTitle().getText();
 		
-		Assert.assertEquals(result,"Login");
+		AssertJUnit.assertEquals(result,"Login");
 
 	}
 	
 	
 	@Test
 	public void searchTest() {
-		webDriver.get("http://localhost:4200/shop");
+		webDriver.get(baseURL+"/shop");
 		
 		ShopPage shopPage = new ShopPage(webDriver);
 		
@@ -134,13 +149,13 @@ public class ShopTest extends Base {
 			result = result && matcher.find();
 		}
 		
-		Assert.assertTrue(result);
+		AssertJUnit.assertTrue(result);
 		
 	}
 	
 	@Test
 	public void categoryTest() {
-		webDriver.get("http://localhost:4200/shop");
+		webDriver.get(baseURL+"/shop");
 		
 		ShopPage shopPage = new ShopPage(webDriver);
 		
@@ -161,7 +176,7 @@ public class ShopTest extends Base {
 			}
 		}
 		
-		Assert.assertTrue(result);
+		AssertJUnit.assertTrue(result);
 		
 	}
 	
