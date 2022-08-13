@@ -39,16 +39,16 @@ public class AdminEditProductTest extends Base {
 		
 	}
 
-//	@Test
-//	public void validatePageTitleTest() {
-//		 webDriver.get(baseURL + "/admin/manage-products/edit-product/1");
-//		
-//		
-//		EditProductPage editProductPage = new EditProductPage(webDriver);
-//		
-//		String result = editProductPage.getTitle().getText();
-//		AssertJUnit.assertEquals(result,"Edit Product");
-//	}
+	@Test
+	public void validatePageTitleTest() {
+		 webDriver.get(baseURL + "/admin/manage-products/edit-product/1");
+		
+		
+		EditProductPage editProductPage = new EditProductPage(webDriver);
+		
+		String result = editProductPage.getTitle().getText();
+		AssertJUnit.assertEquals(result,"Edit Product");
+	}
 	
 	@Test
 	public void testProductId() {
@@ -62,18 +62,18 @@ public class AdminEditProductTest extends Base {
 	}
 	
 	
-	@Test
-	public void validateSuccessMessageTest() {
-		 webDriver.get(baseURL+"/admin/manage-products/edit-product/1");
-		
-		
-		EditProductPage editProductPage = new EditProductPage(webDriver);
-	
-		editProductPage.getUpdateBtn().click();
-
-		String result = editProductPage.getUpdateSuccessMsg().getText();
-		AssertJUnit.assertEquals(result,"Product was saved successfully! Go Product Admin Page");
-	}
+//	@Test
+//	public void validateSuccessMessageTest() {
+//		 webDriver.get(baseURL+"/admin/manage-products/edit-product/1");
+//		
+//		
+//		EditProductPage editProductPage = new EditProductPage(webDriver);
+//	
+//		editProductPage.getUpdateBtn().click();
+//
+//		String result = editProductPage.getUpdateSuccessMsg().getText();
+//		AssertJUnit.assertEquals(result,"Product was saved successfully! Go Product Admin Page");
+//	}
 	
 	
 	@Test
