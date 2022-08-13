@@ -29,6 +29,8 @@ public class Base {
 		String browserName = prop.getProperty("browser");
 		String folderPath = prop.getProperty("folderPath");
 		
+		System.setProperty("webdriver.chrome.whitelistedIps", "");
+
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("headless");
 		options.addArguments("disable-gpu");
