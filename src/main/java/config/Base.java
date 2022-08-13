@@ -33,8 +33,10 @@ public class Base {
 
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("headless");
-		options.addArguments("disable-gpu");
 		options.addArguments("--disable-dev-shm-usage");
+		options.addArguments("disable-infobars"); // disabling infobars
+		options.addArguments("--disable-extensions"); // disabling extensions
+		options.addArguments("--no-sandbox");
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", folderPath + "//chromedriver");
